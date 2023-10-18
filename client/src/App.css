@@ -1,0 +1,161 @@
+.signup-container,
+.login-container,
+.fp-container,
+.home-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+
+body {
+  background-image: url(https://static.vecteezy.com/system/resources/previews/004/941/847/original/cosmetic-background-for-product-branding-and-packaging-presentation-geometry-form-circle-molding-on-podium-stage-with-shadow-of-leaf-background-design-eps10-vector.jpg);
+}
+
+form,
+.login-form,
+.forgotPassword-form {
+  /* background-image: linear-gradient(
+    to bottom,
+
+    rgb(116, 46, 104) 40%,
+    rgb(33, 34, 109) 80%
+  ); */
+  background-color: #30434b;
+  width: 21%;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 50px;
+}
+form label {
+  display: inline-block;
+  width: 100px;
+  color: #f0f2f2;
+  font-size: 1.1rem;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+form input,
+.file {
+  width: 98%;
+  padding: 6px;
+  margin-top: 10px;
+  color: #535a64;
+  border: 1px solid aqua;
+  border-radius: 15px;
+  font-size: 0.98rem;
+}
+
+form button {
+  width: 200px;
+  padding: 5px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 20px;
+  border: 1px solid aqua;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: -10px;
+  color: #486256;
+}
+.profile-pic {
+  width: 150px;
+  margin-left: -10px;
+  margin-top: 10px;
+}
+.file {
+  width: 108px;
+  margin-left: 30px;
+}
+
+p {
+  color: #f0f2f2;
+  margin: 5px;
+}
+
+.login-link,
+.fp-link {
+  margin: 5px;
+  color: #e55226;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+.fp-link {
+  margin: 10px;
+}
+
+.brand-pic {
+  width: 80px;
+  margin: 12px;
+}
+.login-form {
+  height: 45vh;
+  width: 21%;
+}
+.forgotPassword-form {
+  height: 41vh;
+  width: 20%;
+}
+.home-card {
+  height: 80vh;
+}
+
+.back-btn,
+.submit-btn {
+  width: 100px;
+  margin: 20px;
+}
+
+h2 {
+  color: #f4f3f0;
+}
+.fp-text {
+  font-size: 0.95rem;
+  margin-left: 15px;
+}
+.card {
+  width: 400px;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(245, 251, 252) 40%,
+    rgb(88, 20, 11) 80%
+  );
+}
+h4 {
+  color: #1b7562;
+  margin-top: 10px;
+}
+.card-img-top {
+  width: 200px;
+}
+.card-title {
+  color: #f4f3f0;
+  font-size: 1.1rem;
+  margin: 10px;
+}
+
+.edit-btn {
+  background-color: #1b7562;
+  color: #f0f2f2;
+  text-align: center;
+  border: none;
+  padding: 5px;
+  width: 90px;
+}
+
+.delete-btn {
+  border: none;
+  text-align: center;
+  background: transparent;
+  margin-left: 10px;
+}

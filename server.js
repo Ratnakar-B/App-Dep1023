@@ -1,8 +1,10 @@
 let express = require("express");
+let path = require("node:path");
 let cors = require("cors");
 let app = express();
 app.use(cors());
 app.use("/uploads", express.static("uploads"));
+app.use(express.static(path.join(__dirname, "./client/build")));
 const bcrypt = require("bcrypt");
 const dotenv = require("dotenv");
 dotenv.config();

@@ -46,10 +46,7 @@ function Profile() {
       body: dataToSend,
     };
 
-    let JSONData = await fetch(
-      "http://localhost:3333/updateProfile",
-      reqOptions
-    );
+    let JSONData = await fetch("/updateProfile", reqOptions);
     let JSOData = await JSONData.json();
     alert(JSOData.msg);
     console.log(JSOData);

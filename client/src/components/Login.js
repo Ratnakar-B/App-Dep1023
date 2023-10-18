@@ -6,7 +6,9 @@ function Login() {
   let emailInputRef = useRef();
   let passwordInputRef = useRef();
   let navigate = useNavigate();
-  axios.defaults.baseURL = "http://localhost:3333";
+  axios.defaults.baseURL = "";
+
+  // Don't add http://localhost:3333//
 
   useEffect(() => {
     emailInputRef.current.value = localStorage.getItem("email");
@@ -56,10 +58,7 @@ function Login() {
       body: dataToSend,
     };
 
-    let JSONData = await fetch(
-      "http://localhost:3333/validateToken",
-      reqOptions
-    );
+    let JSONData = await fetch("/validateToken", reqOptions);
     let JSOData = await JSONData.json();
 
     console.log(JSOData);

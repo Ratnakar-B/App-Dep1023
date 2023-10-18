@@ -16,10 +16,7 @@ function Home() {
       body: dataToSend,
     };
 
-    let JSONData = await fetch(
-      "http://localhost:3333/deleteProfile",
-      reqOptions
-    );
+    let JSONData = await fetch("/deleteProfile", reqOptions);
 
     let JSOData = await JSONData.json();
 
@@ -102,7 +99,7 @@ function Home() {
           </h4>
           <img
             className="card-img-top"
-            src={`http://localhost:3333/${loc.state.data.profilePic}`}
+            src={`${loc.state.data.profilePic}`}
             alt="Card image"
           ></img>
           <div className="card-body">
